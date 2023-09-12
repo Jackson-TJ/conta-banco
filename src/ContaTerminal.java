@@ -11,7 +11,7 @@ public class ContaTerminal {
                   
             System.out.println("Por favor, digite o número da Agência !");
                 agenciaNumero = auxiliar.nextLine();
-                
+
             System.out.println("Por favor, digite o número da Conta !");
                 numeroConta = auxiliar.nextInt();
                 
@@ -20,8 +20,9 @@ public class ContaTerminal {
 
             System.out.println("Por favor, digite o Saldo !");
                 saldo = auxiliar.nextDouble();
-            System.out.println("Olá "+nomeCliente+", obrigado por criar uma conta em nosso banco, sua agência é  " +agenciaNumero+", conta  "+numeroConta+" e seu saldo "+saldo+" já está disponível para saque");
-        nome.close();
+            System.out.println("Olá "+nomeCliente+", obrigado por criar uma conta em nosso banco, sua agência é  " +agenciaNumero);
+            System.out.println(", conta  "+numeroConta+" e seu saldo "+saldo+" já está disponível para saque");
+            nome.close();
         auxiliar.close();
     }
 
